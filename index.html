@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HERE AND NOW AI - Predictive Failure Analysis</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/hereandnowai/images/refs/heads/main/logos/favicon-logo-with-name.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --hnai-color-primary: #FFDF00; /* Golden Yellow */
+      --hnai-color-primary-darker: #e6c600; /* Darker Golden Yellow for hover */
+      --hnai-color-secondary: #004040; /* Dark Teal */
+      --hnai-color-secondary-lighter: #005A5A; /* Lighter Dark Teal for cards/hover */
+      
+      --hnai-background: var(--hnai-color-secondary);
+      --hnai-card-background: var(--hnai-color-secondary-lighter);
+      --hnai-text-on-secondary: #E0E7FF; /* A light, slightly blueish gray for better harmony with teal */
+      --hnai-text-on-primary: var(--hnai-color-secondary); /* Dark Teal text on Golden Yellow background */
+      --hnai-text-accent: var(--hnai-color-primary);
+      --hnai-text-muted: #94a3b8; /* Tailwind's slate-500, good for muted text on dark backgrounds */
+      --hnai-border-color: #007070; /* A border color slightly lighter than card bg */
+
+      --hnai-status-healthy: #4ade80; /* Tailwind green-400 */
+      --hnai-status-degrading: var(--hnai-color-primary);
+      --hnai-status-critical: #f87171; /* Tailwind red-400 */
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--hnai-background);
+      color: var(--hnai-text-on-secondary);
+    }
+    .hnai-focus-ring:focus {
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      box-shadow: 0 0 0 3px var(--hnai-color-primary);
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@18.3.1/",
+    "react/": "https://esm.sh/react@18.3.1/",
+    "react": "https://esm.sh/react@18.3.1",
+    "recharts": "https://esm.sh/recharts@2.12.7"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="antialiased">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

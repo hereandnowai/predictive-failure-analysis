@@ -1,0 +1,6 @@
+{
+  "name": "Predictive Failure Analysis",
+  "description": "Upload equipment sensor data to predict potential system failures using machine learning. This AI-powered app analyzes key indicators to calculate failure probability, assign health status, and suggest proactive maintenance.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
